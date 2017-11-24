@@ -1,0 +1,25 @@
+Image Index,Finding Labels
+00000001_000.png,Cardiomegaly
+00000001_001.png,Cardiomegaly|Emphysema
+00000001_002.png,Cardiomegaly|Effusion
+00000002_000.png,No Finding
+00000003_000.png,Hernia
+00000003_001.png,Hernia
+00000003_002.png,Hernia
+00000003_003.png,Hernia|Infiltration
+00000003_004.png,Hernia
+00000003_005.png,Hernia
+00000003_006.png,Hernia
+00000003_007.png,Hernia
+00000004_000.png,Mass|Nodule
+00000005_000.png,No Finding
+00000005_001.png,No Finding
+00000005_002.png,No Finding
+00000005_003.png,No Finding
+00000005_004.png,No Finding
+00000005_005.png,No Finding
+00000005_006.png,Infiltration
+00000005_007.png,Effusion|Infiltration
+00000006_000.png,No Finding
+00000007_000.png,No Finding
+00000008_000.png,Cardiomegaly
