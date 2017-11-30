@@ -18,7 +18,7 @@ public class DataEntryComparison {
     public void ReadFile() throws FileNotFoundException, IOException{
     
     /*read file*/
-    FileReader fr = new FileReader("Data_Entry_2017.csv");
+    FileReader fr = new FileReader("C:\\Github\\CSU_Program\\DataEntryComparison\\file\\Data_Entry_2017.csv");
     BufferedReader br = new BufferedReader(fr);
     FileWriter fw = new FileWriter("test.txt");
     
