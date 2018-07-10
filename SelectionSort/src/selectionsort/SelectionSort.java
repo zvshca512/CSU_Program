@@ -65,7 +65,7 @@ public class SelectionSort {
   
         System.out.println("所用时间：" + (System.currentTimeMillis() - start));  
         for (int i = 0; i < length; i++) {  
-            System.out.print(number[i] + " ");  
+            System.out.println(number[i] + " ");  
         } 
         
     }

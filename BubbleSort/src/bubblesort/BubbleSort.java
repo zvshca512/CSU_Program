@@ -36,7 +36,7 @@ public class BubbleSort {
     
     public static void main(String[] args) throws FileNotFoundException, IOException {  
         
-        FileReader fr = new FileReader("Random_10000.txt"); //read file
+        FileReader fr = new FileReader("C:\\Github\\CSU_Program\\BubbleSort\\file\\Random_10000.txt"); //read file
         BufferedReader br = new BufferedReader(fr);
         String message = "", eachLine = "";
        
@@ -71,7 +71,7 @@ public class BubbleSort {
   
         System.out.println("所用时间：" + (System.currentTimeMillis() - start));  
         for (int i = 0; i < length; i++) {  
-            System.out.print(number[i] + " ");  
+            System.out.println(number[i] + " ");  
         } 
         
     }  

@@ -25,7 +25,7 @@ public class DistanceArray {
     
     public void  readFile() throws FileNotFoundException, IOException{
     /*read file*/
-    FileReader fr = new FileReader("test10.txt");
+    FileReader fr = new FileReader("C:\\Github\\CSU_Program\\DistanceArray\\file\\test10.txt");
     BufferedReader br = new BufferedReader(fr);
     String message = "", eachLine = "";
     

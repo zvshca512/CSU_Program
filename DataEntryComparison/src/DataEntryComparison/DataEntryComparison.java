@@ -20,7 +20,7 @@ public class DataEntryComparison {
     /*read file*/
     FileReader fr = new FileReader("C:\\Github\\CSU_Program\\DataEntryComparison\\file\\Data_Entry_2017.csv");
     BufferedReader br = new BufferedReader(fr);
-    FileWriter fw = new FileWriter("test.txt");
+    FileWriter fw = new FileWriter("C:\\Github\\CSU_Program\\DataEntryComparison\\file\\test.txt");
     
     br.readLine();
     String message = "", eachLine = "";   
@@ -33,7 +33,7 @@ public class DataEntryComparison {
     /*CTXT cut String*/
     CTXT = message.split(",|\n");
     for(int i = 0 ; i <CTXT.length ; i++){
-//       System.out.println(CTXT[i]); 
+       System.out.println(CTXT[i]); 
     }    
     /*Image Index & Finding Labels 列的資料裝進兩個一維陣列裏*/
     int count=0;
@@ -61,7 +61,7 @@ public class DataEntryComparison {
             String[] temp = name[i].split("\\|"); //對疾病名稱有"|"做切割
 //            System.out.print(temp+":");
             int[] isDiseaseNameTemp = new int[DiseaseName.length];  //設定isDiseaseNameTemp長度為DiseaseName.length[13]
-            System.out.print( number[i] + ",");  
+//            System.out.print( number[i] + ",");  
             fw.write(number[i] + ",");
                       
             for(int j = 0 ; j < temp.length ; j++) //"|"Count
@@ -83,19 +83,19 @@ public class DataEntryComparison {
                 {
                       fw.write(isDiseaseNameTemp[j] +"\t\n");
                       fw.flush();
-                    System.out.print(isDiseaseNameTemp[j]); //沒逗點
+//                    System.out.print(isDiseaseNameTemp[j]); //沒逗點
                 }else
                 {    
                       fw.write(isDiseaseNameTemp[j] + ",");
                       fw.flush();
-                    System.out.print(isDiseaseNameTemp[j] + ",");   //逗點
+//                    System.out.print(isDiseaseNameTemp[j] + ",");   //逗點
                 }
             }
             System.out.print("\n");
         }
-        /*計算每個類別出現次數*/
+    /*計算每個類別出現次數*/
         for(int i = 0 ; i < dn.length ; i++){
-         System.out.print(DiseaseName[i]+":" + dn[i]+ "\n");
+//         System.out.print(DiseaseName[i]+":" + dn[i]+ "\n");
         }
     }
     

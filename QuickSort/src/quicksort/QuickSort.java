@@ -1,4 +1,3 @@
-
 package quicksort;
 
 import java.io.BufferedReader;
@@ -36,7 +35,7 @@ public class QuickSort {
 
     public static void main(String[] args) throws FileNotFoundException, IOException {
         
-        FileReader fr = new FileReader("Random_10000.txt"); //read file
+        FileReader fr = new FileReader("C:\\Github\\CSU_Program\\QuickSort\\file\\Random_10000.txt"); //read file
         BufferedReader br = new BufferedReader(fr);
         String message = "", eachLine = "";
        
@@ -54,7 +53,7 @@ public class QuickSort {
         int [] number= new int [length]; 
         int st = 0;
         for(int i = 0 ; i < length ; i++){
-        number [i]  = Integer.parseInt(STXT[st]);
+        number[i] = Integer.parseInt(STXT[st]);
 //        System.out.println(STXT[st]);
         st +=1;
         }
@@ -71,7 +70,7 @@ public class QuickSort {
 //        }
         System.out.println("所用时间：" + (System.currentTimeMillis() - start)); 
         for (int i = 0; i < length; i++) {  
-            System.out.print(number[i] + " ");  
+            System.out.println(number[i] + " ");  
         } 
 //        System.out.println(out);
     }
