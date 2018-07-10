@@ -13,7 +13,7 @@ public class ChromosomeComparison {
 
     
     public void readfile() throws FileNotFoundException, IOException {
-        FileReader fr = new FileReader("C:\\Github\\CSU_Program\\DataEntryComparison\\file\\Chromosome(90).csv");
+        FileReader fr = new FileReader("C:\\Github\\CSU_Program\\DataEntryComparison\\file\\Chromosome(90_500501).csv");
         BufferedReader br = new BufferedReader(fr);
         String message = "", eachLine = "";
         while ((eachLine = br.readLine()) != null) {
@@ -61,8 +61,8 @@ public class ChromosomeComparison {
                 total++;    //每執行一次遞增
                 System.out.println("obj : " + obj[i] + " 比 " + obj[j] + " &&& " + "predict : " + predict[i] + " 比 " + predict[j]);
                 System.out.println(a);
-//                System.out.println(correct);
-//                System.out.println(total);
+                System.out.println(correct);
+                System.out.println(total);
             }
         }
         System.out.println((double) correct / total * 100);
